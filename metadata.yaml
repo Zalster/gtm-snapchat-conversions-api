@@ -1,2 +1,5 @@
 homepage: "https://zalster.com"
 documentation: "https://github.com/Zalster/gtm-snapchat-conversions-api"
+versions:
+  - sha: 62b3aba732f65860c8b5d7e0b655e36d6336e03d
+    changeNotes: Release of Tag Template
