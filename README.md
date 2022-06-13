@@ -1,4 +1,4 @@
-*# Snapchat Conversions API Tag for Google Tag Manager (Server-side)*
+# Snapchat Conversions API Tag for Google Tag Manager (Server-side)
 Snapchat Conversions API Tag for Google Tag Manager (Server-side)
 
 The Snapchat Conversions API is a Server-to-Server (S2S) integration that allows you to share website and app visitor events directly to Snapchat. Data that is shared via the Conversions API is processed similar to information shared via other Snapchat data integration business tools, like the Snapchat Pixel or Snapchat Offline Conversions etc
@@ -7,15 +7,15 @@ This Tag uses the standard GA4 Client and parses GA4 input into Snapchat data an
 
 /This tag also supports to send from other sources/
 
-*## Input variables*
+## Input variables
 * Snapchat Pixel ID
 * Snapchat Conversions API Token
 * (optional) Custom Setup (if not using mapping)
 
-*## GA4 Standard Events Mapping*
+## GA4 Standard Events Mapping
 The Tag parses all GA4 Client Events into Snapchat Standard Events.  Inheriting data from the GA4 Client is only supported for (most) web events.
 
-*### Mapped Events (GA4 => Snapchat)*
+### Mapped Events (GA4 => Snapchat)
 
   `page_view - PAGE_VIEW`
 
@@ -43,7 +43,7 @@ The Tag parses all GA4 Client Events into Snapchat Standard Events.  Inheriting 
 
   `subscribe - SUBSCRIBE`
 
-*## Other ways to use the Tag*
+## Other ways to use the Tag
 If you are not using GA4 standard events you can still use this tag to send through this Tag with a simple post request. The pixel id and related token will still be set up in Google Tag Manager.
 
 The request Parameters supported are the following
@@ -106,7 +106,7 @@ Use value: [‘lmu’]
 `x-sc-sign-up-method` - A string indicating the sign up method.
 
 
-*## Links*
+## Links
 [_Snapchat Conversions API_](https://marketingapi.snapchat.com/docs/conversion.html)
 
 [_Google Tag Manager Server Side_](https://developers.google.com/tag-platform/tag-manager/server-side)
