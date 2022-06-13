@@ -451,7 +451,7 @@ if(isDebug) {
   logToConsole("postUrl=", postUrl);
 }
       
-// Send Event to TikTok
+// Send Event to Snapchat
 sendHttpRequest(postUrl, (statusCode, headers, response) => {
   if (statusCode >= 200 && statusCode < 300) { 
     data.gtmOnSuccess();
