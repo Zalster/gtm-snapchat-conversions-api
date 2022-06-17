@@ -459,7 +459,7 @@ sendHttpRequest(postUrl, (statusCode, headers, response) => {
   }
   data.gtmOnFailure();
   return;
-}, {headers: {"Authorization": "Bearer " + data.accessToken, "Content-Type": 'application/json'}, method: 'POST'}, JSON.stringify(requestParams));
+}, {headers: {"Authorization": "Bearer " + data.apiToken, "Content-Type": 'application/json'}, method: 'POST'}, JSON.stringify(requestParams));
 
 
 ___SERVER_PERMISSIONS___
