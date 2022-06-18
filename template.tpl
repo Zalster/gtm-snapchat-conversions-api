@@ -443,13 +443,6 @@ if (scid) {
 
 // Snapchat Conversion API Settings
 const postUrl = ['https:/', 'tr.snapchat.com', 'v2', isDebug ? 'validate' : 'conversion'].join('/'); 
-
-// Log in DebugView
-if(isDebug) {
-  logToConsole("tagData=", data);
-  logToConsole("requestParams= ", requestParams);
-  logToConsole("postUrl=", postUrl);
-}
       
 // Send Event to Snapchat
 sendHttpRequest(postUrl, (statusCode, headers, response) => {
@@ -697,6 +690,6 @@ scenarios: []
 
 ___NOTES___
 
-Created on 09/06/2022, 15:44:20
+Created on 18/06/2022, 23:46:20
 
 
