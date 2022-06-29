@@ -367,7 +367,7 @@ const getItemsValue = (items) => {
 const eventData = getAllEventData();
 
 // GA4 Client User Properties
-const ga4UserProperties = eventData['x-ga-mp2-user_properties'] || eventData.user_properties || {};
+const ga4UserProperties = eventData.user_data || eventData['x-ga-mp2-user_properties'] || eventData.user_properties || {};
 
 // Snap Request Properties
 let requestParams = {};
@@ -388,7 +388,7 @@ requestParams.user_agent =
 requestParams.hashed_ip_address = 
   hashSHA256(eventData['x-sc-ip-address'] || eventData.ip_address || getRemoteAddress());
 requestParams.hashed_email = 
-  hashSHA256(eventData['x-sc-email'] || ga4UserProperties.email);
+  hashSHA256(eventData['x-sc-email'] || ga4UserProperties.email || ga4UserProperties.email_address);
 requestParams.hashed_phone_number = 
   hashSHA256(eventData['x-sc-phone-number'] || ga4UserProperties.phone_number);
 requestParams.hashed_mobile_ad_id = 
@@ -432,7 +432,7 @@ requestParams.sign_up_method =
 const scid = eventData['x-scid'] || getCookieValues('_scid')[0];
 if (scid) {
   setCookie('_scid', scid, {
-      'max-age': 3600 * 24 * 7, // ITP max limit 7 days
+      'max-age': 3600 * 24 * 30,
       domain: 'auto',
       path: '/',
       httpOnly: true,
