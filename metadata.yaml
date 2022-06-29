@@ -1,6 +1,8 @@
 homepage: "https://zalster.com"
 documentation: "https://github.com/Zalster/gtm-snapchat-conversions-api"
 versions:
+  - sha: 5545160c0761de46a383994236ca4fb2665270ca
+    changeNotes: Updated user property mapping
   - sha: 486980e4e38d0a07016f27a4f16b73271a5a3c35
     changeNotes: Removed debug logging
   - sha: 7d8c8d21184af9aa36570b527123af342d9e564b
